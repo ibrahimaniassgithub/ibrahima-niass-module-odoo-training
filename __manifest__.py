@@ -20,7 +20,7 @@
         'views/course.xml',
         'views/session.xml',
         'views/theme.xml',
-        #'security/ir.model.access.csv',
-        #'security/security.xml'
+        'security/ir.model.access.csv',
+        'security/security.xml'
     ],
 }

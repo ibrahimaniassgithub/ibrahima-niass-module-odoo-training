@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+session_admin, Session admin access,model_myacademy_session, group_manager,1,1,1,1
+session_user, Session user access,model_myacademy_session, group_user,1,0,0,1
+
+course_admin, Course admin access,model_myacademy_course,group_manager,1,1,1,1
+course_user, Course user access,model_myacademy_course,group_user,1,0,0,1
+
+theme_admin, Theme admin access,model_myacademy_theme,group_manager,1,1,1,1
+theme_user, Theme user access,model_myacademy_theme,group_user,1,0,0,1
