@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<record id="course_tree_view" model="ir.ui.view">
+            <field name="name">course.view.tree</field>
+            <field name="model">myacademy.course</field>
+            <field name="arch" type="xml">
+                <tree string="liste of courses">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="duration"/>
+                    <field name="theme"/>
+                </tree>
+            </field>
+</record>
+<record   id="course_name_action_list" model="ir.actions.act_window" >
+            <field name="name">courses</field>
+            <field name="res_model">myacademy.course</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">courses
+              </p>
+            </field>
+        </record>
+<menuitem id="training_menu_root" parent="crm.crm_menu_root" name="My Academy" sequence="2"/>
+<menuitem id="training_app_course_menu_action" name="Course" parent="training_menu_root" action="course_name_action_list"/>
+</odoo>
